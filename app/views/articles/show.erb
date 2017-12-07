@@ -1,0 +1,15 @@
+<p>
+  <strong>标题:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>内容:</strong>
+  <%= @article.text %>
+</p>
+<p>
+  <%= link_to '返回文章列表',articles_path%>&nbsp;&nbsp;
+  <%= link_to '新建文章',new_article_path%>
+  <%= link_to '编辑文章',edit_article_path(@article)%>
+
+</p>
