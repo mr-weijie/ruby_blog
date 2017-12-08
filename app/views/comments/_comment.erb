@@ -1,0 +1,7 @@
+<p>
+  <strong>评论人:</strong>
+  <%= comment.commenter%><br>
+  <strong>评论内容：</strong>
+  <%= comment.body%><br>
+  <%= link_to '删除该条评论',[comment.article,comment],method: :delete,data:{confirm:'确信要删除该条评论吗？'}%>
+</p>

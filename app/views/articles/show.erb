@@ -7,6 +7,12 @@
   <strong>内容:</strong>
   <%= @article.text %>
 </p>
+  <h2>已有评论</h2><br>
+<%= render @article.comments%><!--@article.comments会自动遍历集合中的每个元素，然后再分别渲染局部视图-->
+<p>
+  <h2>添加评论</h2>
+<%= render 'comments/form'%>
+</p>
 <p>
   <%= link_to '返回文章列表',articles_path%>&nbsp;&nbsp;
   <%= link_to '新建文章',new_article_path%>
